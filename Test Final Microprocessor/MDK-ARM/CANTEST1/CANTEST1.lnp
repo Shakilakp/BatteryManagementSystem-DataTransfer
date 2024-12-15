@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"cantest1\startup_stm32f407xx.o"
+"cantest1\main.o"
+"cantest1\stm32f4xx_it.o"
+"cantest1\stm32f4xx_hal_msp.o"
+"cantest1\stm32f4xx_hal_can.o"
+"cantest1\stm32f4xx_hal_rcc.o"
+"cantest1\stm32f4xx_hal_rcc_ex.o"
+"cantest1\stm32f4xx_hal_flash.o"
+"cantest1\stm32f4xx_hal_flash_ex.o"
+"cantest1\stm32f4xx_hal_flash_ramfunc.o"
+"cantest1\stm32f4xx_hal_gpio.o"
+"cantest1\stm32f4xx_hal_dma_ex.o"
+"cantest1\stm32f4xx_hal_dma.o"
+"cantest1\stm32f4xx_hal_pwr.o"
+"cantest1\stm32f4xx_hal_pwr_ex.o"
+"cantest1\stm32f4xx_hal_cortex.o"
+"cantest1\stm32f4xx_hal.o"
+"cantest1\stm32f4xx_hal_exti.o"
+"cantest1\stm32f4xx_hal_rtc.o"
+"cantest1\stm32f4xx_hal_rtc_ex.o"
+"cantest1\stm32f4xx_hal_tim.o"
+"cantest1\stm32f4xx_hal_tim_ex.o"
+"cantest1\system_stm32f4xx.o"
+--strict --scatter "CANTEST1\CANTEST1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CANTEST1.map" -o CANTEST1\CANTEST1.axf
